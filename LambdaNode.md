@@ -126,9 +126,9 @@ exports.first = function(event, context, callback) {
 ```
 
 8. <b>Response for an API Gateway</b> The response is done via an object. This is done with an object.  
-
-exports.first = function(event, context, callback) {
 ```javascript
+exports.first = function(event, context, callback) {
+
     callback(null, {
         "key": "some data"
     });
