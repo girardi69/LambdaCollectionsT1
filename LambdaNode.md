@@ -81,3 +81,17 @@ exports.first = function(event, context) {
      
 };   
 ```
+
+
+6. <b>Callback</b> This example demonstrates what happens when a lambda has a duration longer than the timeout set by default. Default timeout is 3s, while here the lambda will last 5s.  
+  
+```javascript
+exports.first = function(event, context, callback) {
+    
+  setTimeout(function() {
+     console.log('Hello, World!');
+  }, 10000)   
+     
+ callback(null, 'I am done');
+};   
+```
