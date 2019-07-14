@@ -137,3 +137,14 @@ exports.first = function(event, context, callback) {
     
 };  
 ```
+
+9. <b>Stateless</b> One of the most beautiful examples. The declaration of the variable i is outside the function, so the increment is successful within the stream. When the lambda gets activated, it starts from 1 onwards. When the lambda is invoked again, it is stateful! And remembers the older value. That is true until the lambda doesn't get destroyed, so that the counter starts again.  
+
+```javascript
+let i = 1;
+
+exports.first = function(event, context) {
+
+    console.log(i++);
+}; 
+```
