@@ -27,10 +27,10 @@ exports.first = function(event, context) {
 };
 ```
 
-3. Exporting errors.  
+3. Exporting errors with the function context.done.  
 In previous example, the context.done returns the null value. It could have reported an error, and in the following case there is the possibility that some calculations gets an error and return an error, as displayed.  
 Try the function with the right sum value = 15 and with a wrong value = 16. 
- 
+This function is useful when we want to send the log in some specific context, like an alerting function on slack or other systems.   
 
 ```javascript
 exports.first = function(event, context) {
