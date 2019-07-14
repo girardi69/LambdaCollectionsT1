@@ -10,3 +10,13 @@ exports.handler = async (event) => {
     return response;  
 };  
 ```    
+
+```javascript
+exports.first = function(event, context) {
+
+    console.log('FROM CONSOLE');
+    
+    // TODO implement
+    context.done(null, 'Hello FROM CONTEXT');
+};
+```
