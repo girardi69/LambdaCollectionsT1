@@ -49,7 +49,7 @@ exports.first = function(event, context) {
 };
 ```
   
-4. This example returns a quote from forismatic  
+4. This example returns a quote from forismatic. Context.done will return the information at the end of the thread.    
   
 ```javascript
 const http = require('http');
@@ -64,8 +64,6 @@ exports.first = function(event, context) {
         res.on('end', () => {
             context.done(null, rawData);  
         });
-    });
-    
-    
-}   
+    });  
+};   
 ```
