@@ -1,5 +1,5 @@
 
-
+```javascript
 const _ = require('lodash');
 
 const AWS = require('aws-sdk');
@@ -22,13 +22,14 @@ kinesisClient.putRecords(params, (err, data) => {
   }
   else {
     console.log(data);
-  }
-});
+  }  
+});  
+  
+function attachPartitionKey(record) {  
+  return {  
+    'PartitionKey': record.id.toString(),  
+    'Data': JSON.stringify(record) //new Buffer() or a string  
+  };  
 
-function attachPartitionKey(record) {
-  return {
-    'PartitionKey': record.id.toString(),
-    'Data': JSON.stringify(record) //new Buffer() or a string
-  };
-
-}
+}  
+```
