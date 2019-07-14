@@ -1,6 +1,7 @@
 Code proposed by aws example  
     
-```exports.handler = async (event) => {  
+```javascript
+exports.handler = async (event) => {  
     // TODO implement  
     const response = {  
         statusCode: 200,  
