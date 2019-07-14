@@ -1,6 +1,6 @@
 Code proposed by aws example  
     
-exports.handler = async (event) => {  
+```exports.handler = async (event) => {  
     // TODO implement  
     const response = {  
         statusCode: 200,  
@@ -8,4 +8,4 @@ exports.handler = async (event) => {
     };  
     return response;  
 };  
-    
+```    
