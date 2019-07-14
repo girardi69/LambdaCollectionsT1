@@ -1,4 +1,4 @@
-
+<b>index.js</b>
 ```javascript
 const _ = require('lodash');
 
@@ -32,4 +32,23 @@ function attachPartitionKey(record) {
   };  
 
 }  
+```
+
+<b>package.json</b>
+```javascript
+{
+  "name": "kinesis-producer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.112.0",
+    "lodash": "^4.17.4"
+  }
+}
 ```
