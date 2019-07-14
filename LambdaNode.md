@@ -43,5 +43,6 @@ exports.first = function(event, context) {
     context.done(null, c);
     } else {
     context.done("error of te expected function");
+    }
 };
 ```
