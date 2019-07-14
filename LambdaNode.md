@@ -48,3 +48,24 @@ exports.first = function(event, context) {
     }
 };
 ```
+  
+  
+  
+```javascript
+import http
+
+exports.first = function(event, context) {
+    
+    http.get('http://api.forismatic.com/api/1.0/json?method=getQuote&lang=en&format=json',res => {
+        
+        let rawData = '';
+        res.on('data', (chunk) => {rawdata += chunk;});
+        
+        res.on('end', () => {
+            result = rawData;
+        });
+    });
+    context.done(null.result);
+    
+}   
+```
