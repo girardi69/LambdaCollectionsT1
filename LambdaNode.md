@@ -49,7 +49,7 @@ exports.first = function(event, context) {
 };
 ```
   
-4. This example doesn't work and return error; it must be debugged.  
+4. This example returns a quote from forismatic  
   
 ```javascript
 const http = require('http');
@@ -59,13 +59,13 @@ exports.first = function(event, context) {
     http.get('http://api.forismatic.com/api/1.0/json?method=getQuote&lang=en&format=json',res => {
         
         let rawData = '';
-        res.on('data', (chunk) => {rawdata += chunk;});
+        res.on('data', (chunk) => { rawData += chunk;});
         
         res.on('end', () => {
-            result = rawData;
+            context.done(null, rawData);  
         });
     });
-    context.done(null.result);
+    
     
 }   
 ```
