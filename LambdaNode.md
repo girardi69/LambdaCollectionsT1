@@ -98,3 +98,40 @@ exports.first = function(event, context, callback) {
  callback(null, 'I am done');
 };   
 ```
+
+
+6. <b>callback vs context.done method comparison</b>.  
+Both methods have two values, the error and the output.  
+context methods are legacy methods and have been deprecated in 2017. 
+  
+```javascript
+exports.first = function(event, context, callback) {
+    
+  context.callbackWaitsForEmptyEventLoop = true;
+  
+  setTimeout(function() {
+     console.log('Hello, World!');
+  }, 10000)   
+     
+ context.done(null, 'I am done');
+ 
+ callback(null, 'I am done');
+};   
+
+7. <b>Null</b>
+
+```javascript
+exports.first = function(event, context, callback) {
+};  
+```
+
+8. <b>Response for an API Gateway</b> The response is done via an object. This is done with an object.  
+
+exports.first = function(event, context, callback) {
+```javascript
+    callback(null, {
+        "key": "some data"
+    });
+    
+};  
+```
