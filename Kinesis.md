@@ -4,7 +4,7 @@ const _ = require('lodash');
 
 const AWS = require('aws-sdk');
 const kinesisClient = new AWS.Kinesis({
-  'region': 'us-east-1'
+  'region': 'us-west-1'
 });
 
 const employeeList = require('./employee.json');
