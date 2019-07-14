@@ -29,6 +29,8 @@ exports.first = function(event, context) {
 
 3. Exporting errors.  
 In previous example, the context.done returns the null value. It could have reported an error, and in the following case there is the possibility that some calculations gets an error and return an error, as displayed.  
+Try the function with the right sum value = 15 and with a wrong value = 16. 
+ 
 
 ```javascript
 exports.first = function(event, context) {
@@ -42,7 +44,7 @@ exports.first = function(event, context) {
         // TODO implement
     context.done(null, c);
     } else {
-    context.done("error of te expected function");
+    context.done("error of the expected function");
     }
 };
 ```
