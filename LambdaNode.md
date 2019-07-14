@@ -52,7 +52,7 @@ exports.first = function(event, context) {
 4. This example doesn't work and return error; it must be debugged.  
   
 ```javascript
-import http
+const http = require('http');
 
 exports.first = function(event, context) {
     
