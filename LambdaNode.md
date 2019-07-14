@@ -67,3 +67,17 @@ exports.first = function(event, context) {
     });  
 };   
 ```
+
+5. This example demonstrates what happens when a lambda has a duration longer than the timeout set by default. Default timeout is 3s, while here the lambda will last 5s.  
+  
+```javascript
+const http = require('http');
+
+exports.first = function(event, context) {
+    
+  setTimeout(function() {
+     context.done(null, "done");
+  }, 5000)   
+     
+};   
+```
