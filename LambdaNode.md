@@ -1,4 +1,4 @@
-Code proposed by aws example  
+1. Code proposed by aws example  
     
 ```javascript
 exports.handler = async (event) => {  
@@ -11,7 +11,7 @@ exports.handler = async (event) => {
 };  
 ```    
 
-Exporting a method with the handler. in this case the method is changed from handler to first and it has to be changed also in the handler, which changes from index.handler to index.first.  
+2. Exporting a method with the handler. in this case the method is changed from handler to first and it has to be changed also in the handler, which changes from index.handler to index.first.  
 Console.log will give the output of the function  
 Context.done will return the informations to THE LOGS.   
 The test event is not important since we're not using the input in this specific call.  
@@ -27,7 +27,8 @@ exports.first = function(event, context) {
 };
 ```
 
-* Exporting errors.  
+3. Exporting errors.  
+In previous example, the context.done returns the null value. It could have reported an error, and in the following case there is the possibility that some calculations gets an error and return an error, as displayed.  
 
 ```javascript
 exports.first = function(event, context) {
