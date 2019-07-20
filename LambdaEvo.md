@@ -1,4 +1,4 @@
-## This function is combined with the AWS API GW and returns the response with html <h1> style.  
+## This function is combined with the AWS API GW and returns the response with html  
 
 ```javascript
 
@@ -35,8 +35,8 @@ https://kennbrodhagen.net/2016/01/31/how-to-return-html-from-aws-api-gateway-lam
 
 1. Navigate to the Integration Response for the API's GET method.
 2. Open up the 200 Response, Header Mappings, and Mapping Templates.
-3. Edit the Response Header Content-Type and set the Mapping value to 'text/html' (be sure to use single quotes). Don't forget to save it with the green checkmark icon.
-4. Delete the application/json Content-Type under Mapping Templates.
-5. Add the Content-Type text/html (no quotes this time).
+3. Edit the Response Header Content-Type and set the Mapping value to `'text/html'` (be sure to use single quotes). Don't forget to save it with the green checkmark icon.
+4. Delete the `application/json` Content-Type under Mapping Templates.
+5. Add the Content-Type `text/html` (no quotes this time).
 6. Select Mapping Template in the right-hand drop-down box.
-7. Set the value of Template to $input.path('$') and save with the green checkmark.
+7. Set the value of Template to `$input.path('$')` and save with the green checkmark.
