@@ -1,8 +1,9 @@
-## Welcome to GitHub Pages
+## Welcome to my lambda collections
 
-You can use the [editor on GitHub](https://github.com/girardi69/LambdaCollections/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+You can use the [editor on GitHub](https://github.com/girardi69/LambdaCollections/edit/gh-pages/index.md) to maintain and preview the content for you
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The intent of this repository is to host a series of lambda collections explained to help me remind basic features and basic coding principles.  
+
 
 ### Markdown
 
