@@ -1,5 +1,5 @@
 # LambdaTemplates
-A collection of Lambda in different languages
+A collection of Lambda in different Ganguages IN GANGNAM STYLE
 
 aaa  
 bbb  
