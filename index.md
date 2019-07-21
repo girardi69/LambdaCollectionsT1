@@ -3,6 +3,7 @@
 You can use the [editor on GitHub](https://github.com/girardi69/LambdaCollections/edit/gh-pages/index.md) to maintain and preview the content for you
 
 The intent of this repository is to host a series of lambda collections explained to help me remind basic features and basic coding principles.  
+posso mettere ancora una riga in più  
 
 
 ### Markdown
