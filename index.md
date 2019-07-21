@@ -1,6 +1,6 @@
 ## Welcome to my lambda collections T3
 
-You can use the [editor on GitHub](https://github.com/girardi69/LambdaCollections/edit/gh-pages/index.md) to maintain and preview the content for you
+You can use the [editor on GitHub](https://github.com/girardi69/LambdaCollections/edit/gh-pages/index.md) to maintain and preview the content for you T4  
 
 ```markdown
 Syntax highlighted code block
