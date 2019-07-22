@@ -9,7 +9,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[Link](url) and ![Image](https://github.com/girardi69/LambdaCollectionsT1/blob/gh-pages/img/7768E4E5-A467-4B98-91ED-CA4695D740F7.jpeg)
 ```
 
 
