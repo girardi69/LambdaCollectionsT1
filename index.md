@@ -12,8 +12,8 @@ Syntax highlighted code block
 [Link](url) and ![Image](https://github.com/girardi69/LambdaCollectionsT1/blob/gh-pages/img/7768E4E5-A467-4B98-91ED-CA4695D740F7.jpeg)
 ```
 # Insert an Image
-![GitHub Logo](/gh-pages/img/7768E4E5-A467-4B98-91ED-CA4695D740F7.jpeg)
-
+![GitHub Logo](https://github.com/girardi69/LambdaCollectionsT1/blob/gh-pages/img/7768E4E5-A467-4B98-91ED-CA4695D740F7.jpeg)
+Format: ![Alt Text](url)
 ```javascript
 let i = 1;
 
