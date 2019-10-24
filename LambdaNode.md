@@ -151,3 +151,27 @@ exports.first = function(event, context) {
     console.log(i++);
 }; 
 ```
+
+
+TRY THIS
+
+```javascript
+import json
+def lambda_handler(event,context):
+    
+    message = event['key1']               # Get a message
+    message = message.upper()             # Make it all UPPERCASE :)
+    output = ""                           # Create an empty string to hold output
+    for letter in message:                # Loop trough each letter on the message
+        if letter.isupper():              # If the letter is in the alphabet (A-Z)
+            value = ord(letter)
+            if value == 65:               # if letter is 65 (A), chenge it in C
+                value +=  3               # shift the letter value up to 13,
+            letter = chr(value)           # turn the value back into a letter, 
+        output += letter                  # add the letter to our output string
+    
+    return {
+        'statuscode':200,
+        'body': output
+    }
+```        
